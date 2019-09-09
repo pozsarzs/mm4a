@@ -35,7 +35,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "MM4A Growing house controlling equipment"
+Title "MM4A Electrical distribution and switching unit"
 Date "2019-09-19"
 Rev "190919"
 Comp "Pozsar Zsolt"
@@ -188,10 +188,10 @@ F 3 "~" H 9650 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Overcurrent_breaker F5
+L Overcurrent_breaker F4
 U 1 1 5CA26594
 P 8300 2650
-F 0 "F5" V 8150 2750 50  0000 C CNN
+F 0 "F4" V 8150 2750 50  0000 C CNN
 F 1 "C10A" V 8150 2525 50  0000 C CNN
 F 2 "~" H 8325 2650 50  0001 C CNN
 F 3 "~" H 8325 2650 50  0001 C CNN
@@ -202,18 +202,18 @@ $Comp
 L SWITCH_1P K1a
 U 1 1 5CA2659A
 P 8300 3700
-F 0 "K1a" V 8150 3800 50  0000 C CNN
+F 0 "K1a" V 8520 3800 50  0000 C CNN
 F 1 "SWITCH_1P" H 8300 3600 70  0001 C CNN
 F 2 "~" H 8300 3700 60  0000 C CNN
 F 3 "~" H 8300 3700 60  0000 C CNN
 	1    8300 3700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
-L Overcurrent_breaker F6
+L Overcurrent_breaker F5
 U 1 1 5CA39A8A
 P 9250 2650
-F 0 "F6" V 9100 2750 50  0000 C CNN
+F 0 "F5" V 9100 2750 50  0000 C CNN
 F 1 "B6A" V 9100 2550 50  0000 C CNN
 F 2 "~" H 9275 2650 50  0001 C CNN
 F 3 "~" H 9275 2650 50  0001 C CNN
@@ -229,13 +229,13 @@ F 1 "SWITCH_1P" H 9250 3900 70  0001 C CNN
 F 2 "~" H 9250 4000 60  0000 C CNN
 F 3 "~" H 9250 4000 60  0000 C CNN
 	1    9250 4000
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
-L Overcurrent_breaker F7
+L Overcurrent_breaker F6
 U 1 1 5CA3A398
 P 10200 2650
-F 0 "F7" V 10050 2750 50  0000 C CNN
+F 0 "F6" V 10050 2750 50  0000 C CNN
 F 1 "C6A" V 10050 2550 50  0000 C CNN
 F 2 "~" H 10225 2650 50  0001 C CNN
 F 3 "~" H 10225 2650 50  0001 C CNN
@@ -251,7 +251,7 @@ F 1 "SWITCH_1P" H 10200 4100 70  0001 C CNN
 F 2 "~" H 10200 4200 60  0000 C CNN
 F 3 "~" H 10200 4200 60  0000 C CNN
 	1    10200 4200
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Lamp La6
@@ -351,12 +351,12 @@ $Comp
 L SWITCH_1P K1b
 U 1 1 5D72D25F
 P 8550 3700
-F 0 "K1b" V 8400 3800 50  0000 C CNN
+F 0 "K1b" V 8770 3810 50  0000 C CNN
 F 1 "SWITCH_1P" H 8550 3600 70  0001 C CNN
 F 2 "~" H 8550 3700 60  0000 C CNN
 F 3 "~" H 8550 3700 60  0000 C CNN
 	1    8550 3700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L SWITCH_1P K2b
@@ -367,7 +367,7 @@ F 1 "SWITCH_1P" H 9500 3900 70  0001 C CNN
 F 2 "~" H 9500 4000 60  0000 C CNN
 F 3 "~" H 9500 4000 60  0000 C CNN
 	1    9500 4000
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L SWITCH_1P K3b
@@ -378,7 +378,7 @@ F 1 "SWITCH_1P" H 10450 4100 70  0001 C CNN
 F 2 "~" H 10450 4200 60  0000 C CNN
 F 3 "~" H 10450 4200 60  0000 C CNN
 	1    10450 4200
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L SCREW_CONN_1 P17
@@ -749,7 +749,7 @@ L Fuse F7
 U 1 1 5D735AEE
 P 4050 2550
 F 0 "F7" H 4200 2650 50  0000 C CNN
-F 1 "3A" H 3925 2450 50  0000 C CNN
+F 1 "2A" H 3925 2450 50  0000 C CNN
 F 2 "" V 3980 2550 50  0000 C CNN
 F 3 "" H 4050 2550 50  0000 C CNN
 	1    4050 2550
@@ -1137,11 +1137,11 @@ Wire Wire Line
 	3300 2450 3300 1800
 Connection ~ 3300 1800
 Wire Notes Line
-	7950 4200 10150 4200
+	7950 4200 10500 4200
 Wire Notes Line
-	9200 4000 7000 4000
+	7000 4000 9550 4000
 Wire Notes Line
-	8250 3700 6050 3700
+	6050 3700 8600 3700
 Wire Wire Line
 	4350 1600 4350 1550
 Connection ~ 4350 1550
